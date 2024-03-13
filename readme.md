@@ -1,3 +1,5 @@
+# Note: this repo uses submodules!
+- Don't forget to clone recursively
 # Quick Setup!
 - Install JetPack SDK onto a Jetson Device, along with the docker runtime. [Getting Starting Guide](https://developer.nvidia.com/embedded/learn/get-started-jetson-agx-orin-devkit)
 - Clone the Docker Container Repo [Nvidia Containers](https://github.com/dusty-nv/jetson-containers/blob/master/docs/setup.md)
