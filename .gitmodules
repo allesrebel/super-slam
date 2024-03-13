@@ -1,0 +1,7 @@
+[submodule "orb_slam3"]
+	path = orb_slam3
+	url = git@github.com:allesrebel/ORB_SLAM3.git
+	branch = c++14_comp
+[submodule "pangolin"]
+	path = pangolin
+	url = https://github.com/stevenlovegrove/Pangolin.git
