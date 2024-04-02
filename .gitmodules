@@ -5,3 +5,6 @@
 [submodule "pangolin"]
 	path = pangolin
 	url = https://github.com/stevenlovegrove/Pangolin.git
+[submodule "jetson-containers"]
+	path = jetson-containers
+	url = https://github.com/dusty-nv/jetson-containers.git
