@@ -4,6 +4,9 @@ echo "Checking for Jetson Containers Environment Var"
 JETSON_CONTAINERS=${JETSON_CONTAINERS:-"$PWD/jetson-containers"}
 echo "Jetson Containers Dir: $JETSON_CONTAINERS"
 
+echo "Installing pip requirements of Jetson Containers"
+python3 -m pip install -r $JETSON_CONTAINERS/requirements.txt
+
 echo "Running autotag to get image tags..."
 AUTOTAG_COMMAND="$($JETSON_CONTAINERS/autotag ros:humble-desktop opencv:cuda l4t-ml)"
 echo "Autotag Command Output: $AUTOTAG_COMMAND"
