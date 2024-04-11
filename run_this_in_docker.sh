@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # first, we'll set up what we need to do stats
-cd stats && source setup_env.sh && cd
+cd stats && source setup_env.sh && cd ..
 
 # Finish up by building ORBSlam3
 apt update
@@ -11,7 +11,7 @@ apt install -y libboost-all-dev libglew-dev libssl-dev
 
 # Pangolin is included as a submodule, BUT if you want, you can manually
 # git clone --recursive https://github.com/stevenlovegrove/Pangolin pangolin
-cd pangolin && mkdir -p build && cd build && cmake .. && make -j && make install && cd
+cd pangolin && mkdir -p build && cd build && cmake .. && make -j && make install && cd ../..
 
 # orbslam3 is included as a submodule, BUT if you want, you can manually
 # git clone -b c++14_comp https://github.com/UZ-SLAMLab/ORB_SLAM3.git orb_slam3
