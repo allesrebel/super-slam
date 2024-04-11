@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pip install jetson-stats
+pip install -r requirements.txt
 
 apt update
 
