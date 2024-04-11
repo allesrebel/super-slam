@@ -1,3 +1,9 @@
+#!/bin/bash
+
+# first, we'll set up what we need to do stats
+cd stats && source setup_env.sh && cd
+
+# Finish up by building ORBSlam3
 apt update
 
 # depedencies of orbslam and pangolin

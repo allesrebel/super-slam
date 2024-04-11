@@ -20,7 +20,7 @@ if [ $# -gt 0 ]; then
     python3 -m pip install -r stats/requirements.txt
 
     echo "Passing Argument to Docker: $@"
-    echo "$JETSON_CONTAINERS/run.sh --volume $PWD:/root --workdir /root $AUTOTAG_COMMAND run_this_in_docker.sh"
+    echo "$JETSON_CONTAINERS/run.sh --volume $PWD:/root --workdir /root $AUTOTAG_COMMAND $@"
     $JETSON_CONTAINERS/run.sh \
         --volume $PWD:/root \
 	--volume /run/jtop.sock:/run/jtop.sock \

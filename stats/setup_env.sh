@@ -1,7 +1,9 @@
 #!/bin/bash
 
+# installs JTOP
 pip install -r requirements.txt
 
+# installs / builds PERF
 apt update
 
 apt install -y qt5* 
