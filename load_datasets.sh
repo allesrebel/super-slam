@@ -1,6 +1,6 @@
 #!/bin/bash
 
-mkdir -p Datasets && cd Datasets && mkdir -p EuRoc
+mkdir -p Datasets && cd Datasets && mkdir -p EuRoc && cd EuRoc
 
 # MH_01
 mkdir -p MH01 && cd MH01
