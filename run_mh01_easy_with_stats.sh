@@ -9,7 +9,7 @@
 python3 stats/collect_jtop_stats.py > jtop_stats.log &
 
 # start perf
-stats/linux-tegra-5.10/tools/perf/perf record &
+stats/kernel/kernel-jammy-src/tools/perf/perf record &
 
 # move into orbslam for the final command
 cd orb_slam3

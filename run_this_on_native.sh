@@ -16,8 +16,8 @@ if [ $# -gt 0 ]; then
     echo "Requesting user to allow kernel tracing, for perf"
     sudo sysctl -w kernel.perf_event_paranoid=-1
     sudo sysctl -w kernel.kptr_restrict=0
+    python3 -m pip install -U -r stats/requirements.txt
     sudo systemctl start jtop
-    python3 -m pip install -r stats/requirements.txt
 
     echo "Passing Argument to Docker: $@"
     echo "$JETSON_CONTAINERS/run.sh --volume $PWD:/root --workdir /root $AUTOTAG_COMMAND $@"

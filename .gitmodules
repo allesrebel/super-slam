@@ -14,3 +14,6 @@
 [submodule "stats/linux-tegra-5.10"]
 	path = stats/linux-tegra-5.10
 	url = https://github.com/OE4T/linux-tegra-5.10.git
+[submodule "stats/linux"]
+	path = stats/linux
+	url = https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git
