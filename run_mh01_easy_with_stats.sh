@@ -34,3 +34,5 @@ echo 'saving results now'
 cd && mkdir -p result_mh01
 mv perf.data jtop_stats.log result_mh01/
 mv orb_slam3/LocalMapTimeStats.txt orb_slam3/ExecMean.txt orb_slam3/f_dataset-MH01_stereo.txt orb_slam3/SessionInfo.txt orb_slam3/kf_dataset-MH01_stereo.txt orb_slam3/LBA_Stats.txt orb_slam3/TrackingTimeStats.txt result_mh01/
+chmod 777 result_mh01/perf.data
+echo 'saved in result_mh01!'
