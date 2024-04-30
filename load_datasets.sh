@@ -8,8 +8,3 @@ wget http://robotics.ethz.ch/~asl-datasets/ijrr_euroc_mav_dataset/machine_hall/M
 unzip MH_01_easy.zip
 cd ..
 
-# MH_02
-mkdir -p MH02 && cd MH02
-wget http://robotics.ethz.ch/~asl-datasets/ijrr_euroc_mav_dataset/machine_hall/MH_02_easy/MH_02_easy.zip
-unzip MH_02_easy.zip
-cd ..
