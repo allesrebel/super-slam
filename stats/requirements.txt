@@ -1,1 +1,0 @@
-jetson-stats==4.2.7
