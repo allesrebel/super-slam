@@ -1,0 +1,143 @@
+num_seq = 1
+file name: dataset-MH01_stereo
+Loading images for sequence 0...LOADED!
+
+-------
+
+ORB-SLAM3 Copyright (C) 2017-2020 Carlos Campos, Richard Elvira, Juan J. Gómez, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+ORB-SLAM2 Copyright (C) 2014-2016 Raúl Mur-Artal, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+This program comes with ABSOLUTELY NO WARRANTY;
+This is free software, and you are welcome to redistribute it
+under certain conditions. See LICENSE.txt.
+
+Input sensor was set to: Stereo
+Loading settings from ./Examples/Stereo/EuRoC.yaml
+Camera1.k3 optional parameter does not exist...
+	-Loaded camera 1
+Camera2.k3 optional parameter does not exist...
+	-Loaded camera 2
+Camera.newHeight optional parameter does not exist...
+Camera.newWidth optional parameter does not exist...
+	-Loaded image info
+	-Loaded ORB settings
+	-Loaded viewer settings
+System.LoadAtlasFromFile optional parameter does not exist...
+System.SaveAtlasToFile optional parameter does not exist...
+	-Loaded Atlas settings
+System.thFarPoints optional parameter does not exist...
+	-Loaded misc parameters
+	-Computed rectification maps
+----------------------------------
+SLAM settings: 
+	-Camera 1 parameters (Pinhole): [ 458.65399169921875 457.29598999023438 367.21499633789062 248.375 ]
+	-Camera 1 distortion parameters: [  -0.28340810537338257 0.073959067463874817 0.00019359000725671649 1.7618711353861727e-05 ]
+	-Camera 2 parameters (Pinhole: [ 457.58700561523438 456.13400268554688 379.99899291992188 255.23800659179688 ]
+	-Camera 1 distortion parameters: [  -0.2836836576461792 0.074512839317321777 -0.00010473000293131918 -3.555907096597366e-05 ]
+	-Original image size: [ 752 , 480 ]
+	-Current image size: [ 752 , 480 ]
+	-Camera 1 parameters after rectification: [  456.71499633789062 456.71499633789062 364.28717041015625 257.04702758789062 ]
+	-Sequence FPS: 20
+	-Stereo baseline: 0.11007784307003021
+	-Stereo depth threshold : 60
+	-Features per image: 1200
+	-ORB scale factor: 1.2000000476837158
+	-ORB number of scales: 8
+	-Initial FAST threshold: 20
+	-Min FAST threshold: 7
+
+
+Loading ORB Vocabulary. This could take a while...
+Vocabulary loaded!
+
+Initialization of Atlas from scratch 
+Creation of new map with id: 0
+Creation of new map with last KF id: 0
+Seq. Name: 
+There are 1 cameras in the atlas
+Camera 0 is pinhole
+First KF:0; Map init KF:0
+New Map created with 538 points
+Shutdown
+
+ TIME STATS in ms (mean$\pm$std)
+OpenCV version: 3.4.6
+---------------------------
+Tracking
+
+ORB Extraction: 18.284$\pm$1.2455
+Stereo Matching: 4.9309$\pm$1.1136
+Pose Prediction: 2.8306$\pm$0.82931
+LM Track: 6.0656$\pm$2.5255
+New KF decision: 0.082664$\pm$0.15465
+Total Tracking: 35.256$\pm$4.7857
+
+
+
+Local Mapping
+
+KF Insertion: 11.051$\pm$8.5887
+MP Culling: 0.46668$\pm$0.41947
+MP Creation: 20.733$\pm$10.186
+LBA: 99.016$\pm$91.612
+KF Culling: 6.9394$\pm$5.5594
+Total Local Mapping: 136.27$\pm$110.25
+---------------------------
+
+LBA complexity (mean$\pm$std)
+LBA Edges: 10324$\pm$6731.2
+LBA KF optimized: 23.318$\pm$14.134
+LBA KF fixed: 40.656$\pm$34.683
+LBA MP: -nan$\pm$-nan
+
+LBA executions: 154
+LBA aborts: 8
+---------------------------
+
+Map complexity
+KFs in map: 152
+MPs in map: 7886
+---------------------------
+
+Place Recognition (mean$\pm$std)
+Database Query: 1.1693$\pm$1.4453
+SE3 estimation: 3.106$\pm$4.6877
+Total Place Recognition: 4.1803$\pm$5.3083
+
+
+Loop Closing (mean$\pm$std)
+Loop Fusion: -nan$\pm$-nan
+Essential Graph: -nan$\pm$-nan
+Total Loop Closing: -nan$\pm$-nan
+
+Num exec: 0
+Number of KFs: -nan$\pm$-nan
+
+Map Merging (mean$\pm$std)
+Merge Maps: -nan$\pm$-nan
+Welding BA: -nan$\pm$-nan
+Optimization Ess.: -nan$\pm$-nan
+Total Map Merging: -nan$\pm$-nan
+
+Num exec: 0
+Number of KFs: -nan$\pm$-nan
+Number of MPs: -nan$\pm$-nan
+
+Full GBA (mean$\pm$std)
+GBA: -nan$\pm$-nan
+Map Update: -nan$\pm$-nan
+Total Full GBA: -nan$\pm$-nan
+
+Num exec: 0
+Num abort: 0
+Number of KFs: -nan$\pm$-nan
+Number of MPs: -nan$\pm$-nan
+
+Saving trajectory to f_dataset-MH01_stereo.txt ...
+There are 1 maps in the atlas
+  Map 0 has 152 KFs
+
+End of saving trajectory to f_dataset-MH01_stereo.txt ...
+
+Saving keyframe trajectory to kf_dataset-MH01_stereo.txt ...
+saving results now
+saved in MonteCarlo_2procs_cuda!

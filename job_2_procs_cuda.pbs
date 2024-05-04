@@ -1,0 +1,20 @@
+#!/bin/bash
+#PBS -N MonteCarlo_2procs_cuda
+#PBS -l nodes=1:ppn=2:p100
+#PBS -l walltime=00:10:00
+#PBS -j oe
+
+# ensure we can access the file
+cd $PBS_O_WORKDIR
+
+# move into orbslam for the final command
+cd orb_slam3
+
+# finally do the actual orbslam with sample video
+./Examples/Stereo/stereo_euroc ./Vocabulary/ORBvoc.txt ./Examples/Stereo/EuRoC.yaml ~/Datasets/EuRoc/MH01 ./Examples/Stereo/EuRoC_TimeStamps/MH01.txt dataset-MH01_stereo
+
+# save results into results folder
+echo 'saving results now'
+cd $PBS_O_WORKDIR && mkdir -p MonteCarlo_2procs_cuda
+mv orb_slam3/LocalMapTimeStats.txt orb_slam3/ExecMean.txt orb_slam3/f_dataset-MH01_stereo.txt orb_slam3/SessionInfo.txt orb_slam3/kf_dataset-MH01_stereo.txt orb_slam3/LBA_Stats.txt orb_slam3/TrackingTimeStats.txt MonteCarlo_2procs_cuda/
+echo 'saved in MonteCarlo_2procs_cuda!'
