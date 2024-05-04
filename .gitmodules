@@ -1,19 +1,4 @@
 [submodule "orb_slam3"]
 	path = orb_slam3
 	url = https://github.com/allesrebel/ORB_SLAM3.git
-	branch = c++14_comp
-[submodule "pangolin"]
-	path = pangolin
-	url = https://github.com/stevenlovegrove/Pangolin.git
-[submodule "jetson-containers"]
-	path = jetson-containers
-	url = https://github.com/dusty-nv/jetson-containers.git
-[submodule "stats/perf-tools"]
-	path = stats/perf-tools
-	url = https://git.kernel.org/pub/scm/linux/kernel/git/perf/perf-tools.git
-[submodule "stats/linux-tegra-5.10"]
-	path = stats/linux-tegra-5.10
-	url = https://github.com/OE4T/linux-tegra-5.10.git
-[submodule "stats/linux"]
-	path = stats/linux
-	url = https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git
+	branch = c++14-no-GUI
